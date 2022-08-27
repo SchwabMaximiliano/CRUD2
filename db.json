@@ -1,0 +1,44 @@
+{
+  "motorcycles": [
+      {
+          "id": 1,
+          "mark": "Yamaha",
+          "model": "2020",
+          "reference": "FZ 150",
+          "price": 800000,
+          "image": "https://motos0km.com.ar/fichas-tecnicas/yamaha/fz-s-fi/"
+      },
+      {
+          "id": 2,
+          "mark": "Honda",
+          "model": "2022",
+          "reference": "CB 190",
+          "price": 850000,
+          "image": "https://ar.motor1.com/news/474170/lanzamiento-honda-cb190r-nacional/"
+      },
+      {
+          "id": 1,
+          "mark": "Suzuki",
+          "model": "2019",
+          "reference": "Gixxer 150",
+          "price": 750000,
+          "image": "https://motos.suzuki.com.mx/garage/gixxer-150"
+      },
+      {
+          "id": 1,
+          "mark": "Zanella",
+          "model": "2018",
+          "reference": "Rx 150",
+          "price": 650000,
+          "image": "https://motos0km.com.ar/fichas-tecnicas/zanella/rx-150-next/"
+      },
+      {
+          "id": 1,
+          "mark": "Rouser",
+          "model": "2017",
+          "reference": "NS 200",
+          "price": 680000,
+          "image": "http://cetrogarmotos.com.ar/producto/bajaj-rouser-200-ns-2/"
+      }
+  ]
+}

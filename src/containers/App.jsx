@@ -1,7 +1,11 @@
+import Container from "react-bootstrap/esm/Container"
+import MotorcyclesList from "../components/MotorcyclesList"
+
 export default function App() {
     return(
-        <div>
-            <h1>Hola</h1>
-        </div>
+        <Container fluid>
+            <h2 className="text-center">Listado de Motos</h2>
+            <MotorcyclesList />
+        </Container>
     )
 }
