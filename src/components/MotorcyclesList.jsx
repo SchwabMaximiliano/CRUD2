@@ -1,5 +1,7 @@
 import axios from "axios";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import MotorcycleCard from "./MotorcycleCard";
+import {Container, Row} from "react-bootstrap";
 
 export default function MotorcyclesList() {
     
@@ -10,15 +12,26 @@ export default function MotorcyclesList() {
         return response;
     }
 
+    const [list, setList] = useState([]);
+
     useEffect(()=>{
         getData().then((response) => {
-            console.log(response)
+        setList(response.data);
         })
     }, [])
 
     return(
-        <div>
-            lista de motos
-        </div>
+        <Container className="mb-5">
+        <Row>
+            {
+                list.map((motorcycle, index)=>(
+                    <MotorcycleCard 
+                    key={index}
+                    motorcycle={motorcycle}
+                    />
+                ))
+            }
+        </Row>
+        </Container>
     )
 }
