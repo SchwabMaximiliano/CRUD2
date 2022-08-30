@@ -17,3 +17,19 @@ JSON Server
 React Bootstrap
 
 SweetAlert
+
+### Pasos para ejecutarlo
+
+- Clonar el proyecto
+
+- Ejecutar en la terminal
+
+json-server --watch --p 3002 db.json
+
+Terminal 1: yarn start
+
+Terminal 2: yarn start-server
+
+- Visualizar en el explorador  
+
+http://localhost:3000
