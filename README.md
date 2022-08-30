@@ -1,15 +1,19 @@
-# Getting Started with Create React App
+### CRUD React - Axios - Json Server
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## CRUD realizado con React usando axios para consumir una fake API construída en JSON Server.
 
-## Available Scripts
+# 📌 Stack
 
-In the project directory, you can run:
+React
 
-### `npm start`
+Hooks: useState, useEffect
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Enrutamiento dinámico: React Route.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Axios (PUT, POST, DELETE, GET)
+
+JSON Server
+
+React Bootstrap
+
+SweetAlert

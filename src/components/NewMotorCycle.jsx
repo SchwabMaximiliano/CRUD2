@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {Container, Form} from "react-bootstrap";
 import "../styles/styles.css"
 import axios from "axios";
@@ -6,6 +7,8 @@ import Swal from 'sweetalert2'
 
 export default function NewMotorCycle() {
     
+    const navigate = useNavigate();
+
     const [data, setData] = useState({
         mark: "",
         model: "",
@@ -31,6 +34,7 @@ export default function NewMotorCycle() {
                 `La moto ${response.data.reference} ha sido guardada`,
                 'success'
             )
+            navigate('/');
         }else{
             Swal.fire(
                 'Error!',
@@ -51,10 +55,10 @@ export default function NewMotorCycle() {
                     >
                         <option value="">Seleccione una marca</option>
                         <option value="Yamaha">Yamaha</option>
-                        <option value="Yamaha">Honda</option>
-                        <option value="Yamaha">Rouser</option>
-                        <option value="Yamaha">Zanella</option>
-                        <option value="Yamaha">Suzuki</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Rouser">Rouser</option>
+                        <option value="Zanella">Zanella</option>
+                        <option value="Suzuki">Suzuki</option>
                     </Form.Select>
                 </Form.Group>
                 <Form.Group className="mb-3">
