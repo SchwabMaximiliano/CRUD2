@@ -128,7 +128,7 @@ export default function MotorcyclesList() {
                     <Button variant="secondary" type="reset" onClick={()=>setShowModal(false)}>
                         Cancelar
                     </Button>
-                    <Button variant="primary" type="submit" onClick={()=>console.log("hola2")}>
+                    <Button variant="primary" type="submit">
                         Guardar
                     </Button>
                 </Modal.Footer>
